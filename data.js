@@ -7,7 +7,7 @@ var sadrzaj = {
       "recept": "Summer fish stew",
       "kalorije": 325
     }, {
-      "recept": "Creamy tomato courgetti",
+      "recept": "Greek salad",
       "kalorije": 300
     }, {
       "recept": "Sweet potato & cauliflower lentil bowl",
@@ -55,7 +55,7 @@ var sadrzaj = {
       "recept": "Chickpea salad recipe",
       "kalorije": 280
     }, {
-      "recept": "Greek salad",
+      "recept": "Creamy tomato courgetti",
       "kalorije": 395
     }, {
       "recept": "Štrukli",
@@ -66,7 +66,11 @@ var sadrzaj = {
 var n = document.getElementById('naziv');
 var k = document.getElementById('kalorije');
 
-for(i = 0; i < Math.floor((Math.random() * 20) + 1); i++){
+function drugi(){
+  for(i = 0; i < Math.floor((Math.random() * 50) + 1); i++){
     n.innerHTML = sadrzaj.Recepti[i].recept;
     k.innerHTML = sadrzaj.Recepti[i].kalorije + ' kcal';
+  }
 }
+
+
